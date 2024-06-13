@@ -32,10 +32,10 @@ jobs:
         INPUT_CONANFILE: |
           [requires]
           libiconv/1.17
-          #gobject-introspection/1.69.0
+          gobject-introspection/1.69.0
           gstreamer/1.22.3
-          #gst-plugins-base/1.22.3      Disable gstreamer for now, latest gst-plugins-base is 1.19.2
-          #gtk/4.4.0
+          gst-plugins-base/1.22.3      Disable gstreamer for now, latest gst-plugins-base is 1.19.2
+          gtk/4.4.0
           libxml2/2.10.3
           zlib/1.2.13
           libusb/1.0.26
