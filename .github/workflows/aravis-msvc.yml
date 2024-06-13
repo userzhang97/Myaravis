@@ -80,5 +80,5 @@ jobs:
     - name: logs
       uses: actions/upload-artifact@v3
       with:
-        name: install
+        name: install_msvc
         path: ${{ github.workspace }}\install
