@@ -50,7 +50,7 @@ jobs:
       run: |
         mkdir build
         mkdir install
-        meson --prefix=${{ github.workspace }}/install --buildtype=plain -Ddocumentation=disabled -Dgst-plugin=enabled -Dintrospection=enabled -Dusb=enabled -Dviewer=enabled -Dgv-n-buffers=1 -Dgentl-producer=true . ./build
+        meson --prefix=D:/a/Myaravis/Myaravis/install --buildtype=plain -Ddocumentation=disabled -Dgst-plugin=enabled -Dintrospection=enabled -Dusb=enabled -Dviewer=enabled -Dgv-n-buffers=1 -Dgentl-producer=true . ./build
     - name: ninja install
       run: |
         ninja -C ./build --verbose install
@@ -60,4 +60,4 @@ jobs:
     - uses: actions/upload-artifact@v3
       with:
         name: install_mingw64
-        path: ${{ github.workspace }}/install
+        path: D:/a/Myaravis/Myaravis/install
